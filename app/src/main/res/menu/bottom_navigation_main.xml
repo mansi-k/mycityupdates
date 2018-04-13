@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/my_interests"
+        android:enabled="true"
+        android:title="@string/my_interests"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/all_updates"
+        android:enabled="true"
+        android:title="@string/all_updates"
+        app:showAsAction="ifRoom" />
+    <item
+        android:id="@+id/my_store"
+        android:enabled="true"
+        android:title="@string/my_store"
+        app:showAsAction="ifRoom" />
+
+
+</menu>
