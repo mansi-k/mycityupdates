@@ -2,4 +2,20 @@
     <string name="app_name">MyCity</string>
     <string name="register">register</string>
     <string name="dashboard">dashboard</string>
+    <string name="post">Post</string>
+    <string name="description">Description</string>
+    <string name="post_new_update">Post New Update</string>
+    <string name="title">Title</string>
+    <string name="title_activity_interests">InterestsActivity</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="text_favorites">favourites</string>
+    <string name="text_schedules">schedues</string>
+    <string name="my_interests">interests</string>
+    <string name="all_updates">allupdates</string>
+    <string name="my_store">mystores</string>
 </resources>

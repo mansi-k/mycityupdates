@@ -24,7 +24,7 @@ public class DashboardActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Receiving User Email Send By MainActivity.
-        EmailHolder = intent.getStringExtra(MainActivity.UserEmail);
+        EmailHolder = intent.getStringExtra(MainActivity.UserName);
 
         // Setting up received email to TextView.
         Email.setText(Email.getText().toString()+ EmailHolder);

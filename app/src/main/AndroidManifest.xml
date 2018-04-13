@@ -16,17 +16,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Main2Activity"></activity>
-        <activity android:name=".RegisterActivity" android:label="@string/register" android:parentActivityName=".MainActivity">
+        <activity android:name=".Main2Activity" />
+        <activity
+            android:name=".RegisterActivity"
+            android:label="@string/register"
+            android:parentActivityName=".MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mycity.mycity.MainActivity" />
         </activity>
-        <activity android:name=".DashboardActivity" android:label="@string/dashboard" android:parentActivityName=".DashboardActivity">
+        <activity
+            android:name=".DashboardActivity"
+            android:label="@string/dashboard"
+            android:parentActivityName=".DashboardActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="com.mycity.mycity.MainActivity" />
         </activity>
+        <activity android:name=".PostActivity" />
     </application>
 
 </manifest>
