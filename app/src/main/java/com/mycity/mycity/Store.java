@@ -1,25 +1,22 @@
 package com.mycity.mycity;
 
-import com.google.firebase.database.ServerValue;
+public class Store {
 
-import java.io.Serializable;
-
-public class Store implements Serializable{
-
-    public String category, city, name, uqn;
+    private String category;
+    private String city;
+    private String name;
 
     public Store() {
 
     }
 
-    public Store(String cat, String city, String name, String uqn) {
-        this.category = cat;
+    public Store( String category, String city, String name ) {
+        this.category = category;
         this.city = city;
         this.name = name;
-        this.uqn = uqn;
     }
 
-    public String getCat() {
+    public String getCategory() {
         return category;
     }
 
@@ -29,10 +26,6 @@ public class Store implements Serializable{
 
     public String getName() {
         return name;
-    }
-
-    public String getUqn() {
-        return uqn;
     }
 
 }
