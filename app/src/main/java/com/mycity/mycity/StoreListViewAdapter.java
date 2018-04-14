@@ -6,7 +6,9 @@ import android.content.Context;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.ListView;
 import android.widget.TextView;
 
 import java.util.List;
@@ -27,7 +29,7 @@ public class StoreListViewAdapter extends ArrayAdapter<Store> {
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         ViewHolder holder;
-        Store Store = getItem(position);
+        Store store = getItem(position);
 
         LayoutInflater mInflater = (LayoutInflater) context
                 .getSystemService(Activity.LAYOUT_INFLATER_SERVICE);
@@ -40,7 +42,8 @@ public class StoreListViewAdapter extends ArrayAdapter<Store> {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.StoreView.setText(Store.getName() + ": " + Store.getCity() );
+        holder.StoreView.setText(store.getName() + ": " + store.getCity() );
+
         return convertView;
     }
 

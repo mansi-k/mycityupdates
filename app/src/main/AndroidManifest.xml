@@ -35,7 +35,8 @@
         </activity>
         <activity android:name=".PostActivity" />
         <activity android:name=".HomeActivity" />
-        <activity android:name=".MyStoresActivity"></activity>
+        <activity android:name=".MyStoresActivity" />
+        <activity android:name=".StoreDetailsActivity"></activity>
     </application>
 
 </manifest>

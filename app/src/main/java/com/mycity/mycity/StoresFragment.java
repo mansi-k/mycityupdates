@@ -1,11 +1,14 @@
 package com.mycity.mycity;
 
+import android.app.LauncherActivity;
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.support.v7.app.AppCompatActivity;
 
@@ -22,6 +25,10 @@ import java.util.ArrayList;
 public class StoresFragment extends Fragment {
 
     com.google.firebase.database.DatabaseReference dbcity;
+
+    public static final String STORE_NAME = "nameofstore";
+    public static final String STORE_CAT = "catofstore";
+    public static final String STORE_CITY = "cityofstore";
 
     private static final Integer MAX_S = 10;
 
@@ -71,6 +78,21 @@ public class StoresFragment extends Fragment {
                 System.out.println("The read failed: " + firebaseError.getMessage());
             }
         });
+
+        if(mStoresListView!=null) {
+            mStoresListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+                public void onItemClick(AdapterView<?> parent, View view,
+                                        int position, long id) {
+                    Store item = (Store) mStoreListAdapter.getItem(position);
+
+                    Intent intent = new Intent(view.getContext(), StoreDetailsActivity.class);
+                    intent.putExtra(STORE_NAME, item.getName());
+                    intent.putExtra(STORE_CAT, item.getCategory());
+                    intent.putExtra(STORE_CITY, item.getCity());
+                    startActivity(intent);
+                }
+            });
+        }
 
         return rootView;
     }

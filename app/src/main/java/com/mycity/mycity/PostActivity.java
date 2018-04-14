@@ -27,8 +27,8 @@ public class PostActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Receiving User Email Send By MainActivity.
-        //String store = intent.getStringExtra(HomeActivity.storename);
-        String store = "dell";
+        String store = intent.getStringExtra(StoreDetailsActivity.STOREN);
+        //String store = "dell";
 
         dbcity = FirebaseDatabase.getInstance().getReference("posts/"+store);
 
