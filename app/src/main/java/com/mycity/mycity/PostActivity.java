@@ -27,9 +27,10 @@ public class PostActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Receiving User Email Send By MainActivity.
-        UQNHolder = intent.getStringExtra(MainActivity.UserName);
+        //String store = intent.getStringExtra(HomeActivity.storename);
+        String store = "dell";
 
-        dbcity = FirebaseDatabase.getInstance().getReference("posts/dell");
+        dbcity = FirebaseDatabase.getInstance().getReference("posts/"+store);
 
         titleHolder = (EditText) findViewById(R.id.posttitle);
         descHolder = (EditText) findViewById(R.id.postdesc);

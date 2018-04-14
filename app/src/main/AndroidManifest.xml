@@ -34,6 +34,8 @@
                 android:value="com.mycity.mycity.MainActivity" />
         </activity>
         <activity android:name=".PostActivity" />
+        <activity android:name=".HomeActivity" />
+        <activity android:name=".MyStoresActivity"></activity>
     </application>
 
 </manifest>
