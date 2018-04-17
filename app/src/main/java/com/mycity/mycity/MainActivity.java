@@ -21,6 +21,7 @@ public class MainActivity extends AppCompatActivity {
     Cursor cursor;
     String TempPassword = "NOT_FOUND" ;
     public static final String UserName = "";
+    public static String CurUser = "";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -130,11 +131,13 @@ public class MainActivity extends AppCompatActivity {
 
             Toast.makeText(MainActivity.this,"Login Successfully",Toast.LENGTH_LONG).show();
 
+            CurUser = EmailHolder;
+
             // Going to Dashboard activity after login success message.
             Intent intent = new Intent(MainActivity.this, HomeActivity.class);
 
             // Sending Email to Dashboard Activity using intent.
-            intent.putExtra(UserName, EmailHolder);
+            intent.putExtra("username", EmailHolder);
 
             startActivity(intent);
 

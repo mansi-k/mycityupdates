@@ -17,6 +17,7 @@ public class PostActivity extends AppCompatActivity {
     DatabaseReference dbcity;
     Button postButton;
     EditText titleHolder, descHolder;
+    String city, category, store;
 
 
     @Override
@@ -27,10 +28,12 @@ public class PostActivity extends AppCompatActivity {
         Intent intent = getIntent();
 
         // Receiving User Email Send By MainActivity.
-        String store = intent.getStringExtra(StoreDetailsActivity.STOREN);
+        store = intent.getStringExtra(StoreDetailsActivity.STOREN);
+        city = intent.getStringExtra("STORECTY");
+        category = intent.getStringExtra("STORECAT");
         //String store = "dell";
 
-        dbcity = FirebaseDatabase.getInstance().getReference("posts/"+store);
+        dbcity = FirebaseDatabase.getInstance().getReference("posts/");
 
         titleHolder = (EditText) findViewById(R.id.posttitle);
         descHolder = (EditText) findViewById(R.id.postdesc);
@@ -50,7 +53,7 @@ public class PostActivity extends AppCompatActivity {
 
 
         String pid = dbcity.push().getKey();
-        Post post = new Post(title, desc);
+        Post post = new Post(title, desc, null,city, category,store );
         dbcity.child(pid).setValue(post);
 
         titleHolder.setText("");

@@ -3,20 +3,19 @@ package com.mycity.mycity;
 
 import android.app.Activity;
 import android.content.Context;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
-import android.widget.ListView;
 import android.widget.TextView;
 
-import java.util.List;
+import java.util.ArrayList;
 
 public class StoreListViewAdapter extends ArrayAdapter<Store> {
     private Context context;
 
-    public StoreListViewAdapter(Context context, int resourceId, List<Store> items) {
+    public StoreListViewAdapter(FragmentActivity context, int resourceId, ArrayList<Store> items) {
         super(context, resourceId, items);
         this.context = context;
     }
@@ -42,7 +41,7 @@ public class StoreListViewAdapter extends ArrayAdapter<Store> {
             holder = (ViewHolder) convertView.getTag();
         }
 
-        holder.StoreView.setText(store.getName() + ": " + store.getCity() );
+        holder.StoreView.setText(store.getName() + ": " + store.getCategory() );
 
         return convertView;
     }

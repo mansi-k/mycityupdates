@@ -20,7 +20,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:inputType="textEmailAddress"
-        android:hint="Enter Email"
+        android:hint="Enter Username"
         android:textColor="#000"
         android:ems="10"
         android:layout_below="@+id/textView"

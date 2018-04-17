@@ -21,4 +21,10 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="add_new_store">Add New Store</string>
+    <string name="storename">Store Name</string>
+    <string name="stores_near_me">Stores Near Me</string>
+    <string name="city_posts">City Updates</string>
+    <string name="menu_city_updates">City Updates</string>
+    <string name="menu_city_stores">City Stores</string>
 </resources>

@@ -5,15 +5,17 @@ public class Store {
     private String category;
     private String city;
     private String name;
+    private String owner;
 
     public Store() {
 
     }
 
-    public Store( String category, String city, String name ) {
+    public Store( String category, String city, String name, String owner ) {
         this.category = category;
         this.city = city;
         this.name = name;
+        this.owner = owner;
     }
 
     public String getCategory() {
@@ -26,6 +28,10 @@ public class Store {
 
     public String getName() {
         return name;
+    }
+
+    public String getOwner() {
+        return owner;
     }
 
 }

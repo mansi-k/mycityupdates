@@ -5,11 +5,11 @@
     <item
         android:id="@+id/my_interests"
         android:enabled="true"
-        android:title="@string/my_interests"
+        android:title="@string/menu_city_updates"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/all_updates"
-        android:title="@string/all_updates"
+        android:title="@string/menu_city_stores"
         app:showAsAction="ifRoom" />
     <item
         android:id="@+id/my_store"

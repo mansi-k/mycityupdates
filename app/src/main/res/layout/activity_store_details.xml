@@ -43,6 +43,15 @@
             tools:textSize="30sp"
             android:padding="20px"/>
 
+        <ListView
+            android:id="@+id/list_store_posts"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:focusable="true"
+            android:descendantFocusability="beforeDescendants"
+            android:divider="@android:color/transparent"
+            android:dividerHeight="10.0sp"/>
+
 
     </android.support.v7.widget.LinearLayoutCompat>
 

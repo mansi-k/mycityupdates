@@ -1,27 +1,27 @@
 {
   "project_info": {
-    "project_number": "1096241271812",
-    "firebase_url": "https://mycityupdates-f38e0.firebaseio.com",
-    "project_id": "mycityupdates-f38e0",
-    "storage_bucket": "mycityupdates-f38e0.appspot.com"
+    "project_number": "276509546142",
+    "firebase_url": "https://mycity-66c64.firebaseio.com",
+    "project_id": "mycity-66c64",
+    "storage_bucket": "mycity-66c64.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:1096241271812:android:f7c6403fd32852e1",
+        "mobilesdk_app_id": "1:276509546142:android:3ebed8c45222974b",
         "android_client_info": {
           "package_name": "com.mycity.mycity"
         }
       },
       "oauth_client": [
         {
-          "client_id": "1096241271812-ah47br66n1qhtj6fnep997r1hka510em.apps.googleusercontent.com",
+          "client_id": "276509546142-7f9ksp30q0jgp15rrmoehn60cdc1ihc6.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyC3g9M3IxnZB5FQU9VSr6XFMU0g_iffEKo"
+          "current_key": "AIzaSyD1veXGrzpKZpI9MPVj7Hg165C2eXu35to"
         }
       ],
       "services": {
